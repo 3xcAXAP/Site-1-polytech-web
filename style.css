@@ -1,20 +1,242 @@
-*{box-sizing: border-box;
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 
 }
-header{
+
+html {
+    font-size: 62.5%;
+
+}
+
+:root {
+    --primary-color: #122947;
+    --secondary-color: #9A9DA0;
+    --third-color: #959595;
+    --text-color: var(--primary-color);
+    --goodsname-color: var(--secondary-color);
+    --footer-text-color: var(--third-color);
+}
+
+body {
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+
+a {
+    color: var(--text-color);
+}
+
+header {
     width: 100%;
     height: 100px;
-    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* background: url("../images/tesak.jpg") center no-repeat;
+    background-size: cover; */
+    /* position: absolute; */
+    background-color: rgb(245, 245, 245);
+
 }
-main{
+
+.buttonhead {
+    border: none;
+}
+
+
+main {
     width: 100%;
-    height: 3741px;
+    height: 3787px;
     border: 1px solid rgb(60, 141, 23);
 }
-footer{
+
+.s1 {
+    background-image: url("images/Rectangle35.png");
+    background-size: cover;
+    background-position: center;
+    display: block;
+    /* Задайте высоту, соответствующую вашим потребностям */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+h2,
+.history {
+
+    font-family: Raleway;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    text-align: center;
+    line-height: 10vh;
+    margin-bottom: 10px;
+}
+
+p {
+
+    text-align: center;
+    font-family: Mplus 1p;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+    margin-bottom: 10px;
+}
+
+.link1 {
+
+    border-radius: 2px;
+    border: 1px solid #B3BAC1;
+
+
+
+
+    font-family: Mplus 1p;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 19.6px */
+
+    text-align: center;
+    line-height: 10vh;
+    text-decoration: none;
+
+    margin-bottom: 10px;
+}
+
+.link2,
+.link2i,
+.link3i,
+.link3 {
+
+
+    font-family: Mplus 1p;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 16.8px */
+    text-align: center;
+    line-height: 10vh;
+    text-decoration: none;
+
+}
+
+.img-container,
+.link-container {
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.img-container img:nth-child(2) {
+    margin-left: 40px;
+
+}
+
+
+.link-container a:nth-child(2) {
+    margin-left: 40px;
+}
+
+.bestsellers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    /* 36.4px */
+}
+
+
+.carousel {
+    display: flex;
+    /* Или используйте display: grid; */
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    /* Или используйте grid-column: auto; */
+    width: 220px;
+    /* Общая ширина элемента карусели */
+    height: 297px;
+    /* Общая высота элемента карусели */
+    margin-right: 10px;
+    /* Промежуток между элементами */
+
+}
+
+.caroustxtup {
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 145%;
+    /* 23.2px */
+}
+
+.caroustxtmid {
+    color: var(--goodsname-color);
+
+    font-family: Mplus 1p;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    /* 18.85px */
+}
+
+.carousref {
+
+
+    font-family: Mplus 1p;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    /* 18.85px */
+}
+
+.individual {
+    background-color: #F4F1ED;
+}
+
+.history {
+    background-image: url(/images/600693-PMYQNV-922\ 1.jpg);
+    font-size: 22px;
+    line-height: 125%;
+}
+
+.contacts {
+    background: #F4F1ED;
+}
+
+.footertext {
+    color: var(--footer-text-color)
+}
+
+footer {
     width: 100%;
     height: 334px;
     border: 1px solid rgb(246, 165, 255);
+    background: #F4F1ED;
+
+
 }
